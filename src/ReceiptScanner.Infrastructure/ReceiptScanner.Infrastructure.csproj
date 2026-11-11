@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\ReceiptScanner.Core\ReceiptScanner.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- IConfiguration, options, logging, hosting. -->
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Oracle's official MySQL provider. Pomelo has no EF Core 10 release (see docs/DECISIONS.md). -->
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="10.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="10.0.14" />
+    <!-- Image decoding incl. HEIC (libheif is bundled in its native libraries). -->
+    <PackageReference Include="Magick.NET-Q8-AnyCPU" Version="15.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="ReceiptScanner.Tests" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,3 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Pure domain logic (OFX parser, matching, reconcile, insights). No EF, no ASP.NET. -->
+</Project>

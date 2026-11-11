@@ -1,0 +1,19 @@
+{
+  "Urls": "http://127.0.0.1:5080",
+  "ConnectionStrings": {
+    "Default": "Server=127.0.0.1;Port=3306;Database=receipt_scanner;User Id=receipt;Password=CHANGE_ME;CharSet=utf8mb4;"
+  },
+  "Jwt": {
+    "SigningKey": "CHANGE_ME"
+  },
+  "Auth": {
+    "ApiKey": "CHANGE_ME"
+  },
+  "Media": {
+    "Root": "/srv/receipt-scanner/media"
+  },
+  "Extraction": {
+    "Broker": "redis://localhost:6379/1"
+  },
+  "TimeZone": "Australia/Sydney"
+}
